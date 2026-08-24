@@ -46,6 +46,9 @@ h1, h2, h3, h4, h5, h6, p, a, span {
   overflow-wrap: break-word;
 }
 
+
+
+
 .navbar {
   background-color: #ffffff;
   width: 100%;
@@ -157,6 +160,15 @@ h1, h2, h3, h4, h5, h6, p, a, span {
     font-size: 1.5rem;
     cursor: pointer;
     color: #1a1a1a;
+    background: transparent;
+    border: none;
+    z-index: 1002; /* Passer au-dessus du tiroir mobile (z-index 1001) */
+    position: relative;
+  }
+
+  /* Couleur du bouton fermer (X) sur le fond vert foncé */
+  .menu-toggle.active {
+    color: #ffffff;
   }
 
   /* Panneau latéral sombre inspiré du modèle */
@@ -1443,54 +1455,62 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 
 
 
-
+/* ============================================================
+   BOUTON RETOUR EN HAUT (BACK TO TOP)
+   ============================================================ */
 .back-to-top {
   position: fixed;
-  bottom: 5px; /* Distance du bas */
-  right: 10px; /* Distance de la droite */
-  width: 40px;
-  height: 40px;
-  background-color: #003F5C;
-  color: #fff;
-  border-radius: 10%;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--vert-principal, #66a15e);
+  color: #ffffff;
+  border-radius: 50%; /* Cercle parfait */
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.8rem;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  font-size: 1.25rem;
+  box-shadow: 0 8px 24px rgba(102, 161, 94, 0.35);
   z-index: 999;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
 }
 
+/* Effets au survol */
 .back-to-top:hover {
-  background-color: #000; /* Change de couleur au survol */
+  background-color: #121d15; /* Vert très sombre accordé à la charte */
+  color: #82c477;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(18, 29, 21, 0.4);
+  border-color: rgba(130, 196, 119, 0.3);
 }
 
-/* Optionnel : Animation de flottement continue */
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-2px);
-  }
+.back-to-top i {
+  transition: transform 0.3s ease;
 }
 
-.back-to-top {
-  animation: bounce 3s infinite ease-in-out;
+.back-to-top:hover i {
+  transform: translateY(-2px); /* Légère impulsion vers le haut au survol */
 }
 
-/* Cache le bouton sur la barre de navigation mobile pour éviter les chevauchements */
+/* Micro-interaction au clic */
+.back-to-top:active {
+  transform: translateY(-2px) scale(0.95);
+}
+
+/* Adaptations Mobile */
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: 10px; /* On le remonte pour ne pas gêner la mobile-tab-bar */
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    padding: 0px;
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   }
 }
- 
+

@@ -1,6 +1,5 @@
-// src/pages/Navbar.jsx
 import React, { useState } from 'react';
-import "../src/style.css"; // Importation directe du style depuis le dossier parent
+import "../src/style.css";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,17 +20,13 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         
-        {/* LOGO avec Icône */}
+        {/* LOGO */}
         <a href="#hero" className="navbar-logo">
-          <img 
-            src="/img/logo.jpeg" 
-            alt="Logo Centre Sèwèdo" 
-            className="logo-img"
-          />
+          <img src="/img/logo.jpeg" alt="Logo Centre Sèwèdo" className="logo-img" />
           <span>Sèwèdo</span>
         </a>
 
-        {/* Liens du MILIEU (Desktop) */}
+        {/* Liens du MILIEU (Desktop & Mobile Panel) */}
         <ul className={`nav-links-center ${isMobileMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -41,25 +36,29 @@ function Navbar() {
             </li>
           ))}
           
-          {/* Bouton Contact spécifique au menu Mobile */}
           <li className="mobile-only-contact">
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="nav-contact-btn">
-           Contact
+              Contact
             </a>
           </li>
         </ul> 
 
-        {/* Bouton CONTACT à DROITE (Desktop) */}
+        {/* Bouton CONTACT (Desktop) */}
         <div className="nav-right-desktop">
           <a href="#contact" className="nav-contact-btn">
-             Contact
+            Contact
           </a>
         </div>
 
-        {/* Menu Hamburger */}
-        <div className="menu-toggle" onClick={toggleMobileMenu}>
+        {/* Menu Hamburger / Fermeture */}
+        <button 
+          className={`menu-toggle ${isMobileMenuOpen ? 'active' : ''}`} 
+          onClick={toggleMobileMenu}
+          aria-label="Toggle Navigation"
+        >
           <i className={isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
-        </div>
+        </button>
+
       </div>
     </nav>
   );
