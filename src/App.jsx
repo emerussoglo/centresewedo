@@ -42,7 +42,7 @@ export default function App() {
       </main>
 
       {/* Affichage du Pied de page */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
