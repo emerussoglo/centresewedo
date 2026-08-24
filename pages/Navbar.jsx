@@ -47,7 +47,7 @@ function Navbar() {
            Contact
             </a>
           </li>
-        </ul>
+        </ul> 
 
         {/* Bouton CONTACT à DROITE (Desktop) */}
         <div className="nav-right-desktop">
