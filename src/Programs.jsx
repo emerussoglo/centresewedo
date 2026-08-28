@@ -4,39 +4,39 @@ function Programs() {
   const programsData = [
     {
       id: 1,
-      icon: "fas fa-book-open",
-      title: "Bibliothèques & Ateliers Éducatifs",
-      description: "Espaces de lecture, clubs de devoirs et ateliers créatifs pour stimuler la curiosité intellectuelle des enfants et des jeunes."
+      icon: "fas fa-chart-line",
+      title: "Sèwèdo Invest & Tontines",
+      description: "Plateforme d'investissement communautaire et tontines entrepreneuriales orientées vers le financement direct de projets économiques locaux."
     },
     {
       id: 2,
-      icon: "fas fa-hand-holding-heart",
-      title: "Santé Communautaire & Nutrition",
-      description: "Campagnes de sensibilisation, dépistages, ateliers de nutrition et programmes d'hygiène pour améliorer la santé au quotidien."
+      icon: "fas fa-graduation-cap",
+      title: "Sèwèdo Business Academy",
+      description: "Centre de formation en entrepreneuriat, gestion financière, marketing digital et leadership adapté au contexte africain."
     },
     {
       id: 3,
-      icon: "fas fa-seedling",
-      title: "Agriculture Durable & Formation",
-      description: "Initiation aux techniques agroécologiques, jardins communautaires et formations pratiques pour une production alimentaire responsable en bio."
+      icon: "fas fa-female",
+      title: "Programme Femmes d'Impact",
+      description: "Accompagnement spécifique dédié à l'entrepreneuriat féminin : formations métiers, microcrédit et accès au Marché Sèwèdo."
     },
     {
       id: 4,
-      icon: "fas fa-hands-helping",
-      title: "Soutien Psychosocial & Familial",
-      description: "Accompagnement individuel, groupes de parole et médiation familiale pour renforcer les liens et la résilience émotionnelle."
+      icon: "fas fa-flask",
+      title: "Laboratoire Sèwèdo Nature",
+      description: "Unité de recherche appliquée dédiée à l'étude, la valorisation scientifique et la transformation des plantes médicinales africaines."
     },
     {
       id: 5,
-      icon: "fas fa-users",
-      title: "Autonomisation des Femmes & des Jeunes",
-      description: "Formation à l'entrepreneuriat, micro-crédits et mentorat pour favoriser l'indépendance économique et sociale."
+      icon: "fas fa-language",
+      title: "Académie des Langues Locales",
+      description: "Transmission, cours et valorisation du Fon, Yoruba, Bariba, Mina et autres langues béninoises comme vecteurs de savoirs."
     },
     {
       id: 6,
-      icon: "fas fa-globe-africa",
-      title: "Culture, Sport & Vivre-Ensemble",
-      description: "Rencontres interculturelles, activités sportives et événements communautaires pour promouvoir la paix et la cohésion."
+      icon: "fas fa-hotel",
+      title: "Pôle Touristique, Culturel & Séjours",
+      description: "Musée vivant des cultures africaines, restaurant bio, bungalows en cases traditionnelles, camping et espace de conférences de 300 places."
     }
   ];
 
@@ -44,16 +44,14 @@ function Programs() {
     <section id="timeline" className="programs-section">
       <div className="container">
         
-        {/* En-tête de section */}
         <div className="section-header">
-          <span className="section-subtitle">CE QUE NOUS FAISONS</span>
-          <h2 className="section-title">Programmes & Activités</h2>
+          <span className="section-subtitle">NOS DISPOSITIFS DE TRANSFORMATION</span>
+          <h2 className="section-title">Projets Phares Sèwèdo</h2>
           <p className="section-description">
-            Des actions concrètes et durables, pensées pour répondre aux besoins réels des communautés que nous servons.
+            Des initiatives structurantes conçues pour créer une autosuffisance économique tout en finançant nos programmes sociaux.
           </p>
         </div>
 
-        {/* Grille de 6 programmes */}
         <div className="programs-grid">
           {programsData.map((item) => (
             <div key={item.id} className="program-card">

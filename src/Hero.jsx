@@ -4,36 +4,36 @@ function Hero() {
   const slides = [
     {
       id: 1,
-      badge: "ENSEMBLE POUR UN AVENIR MEILLEUR",
-      title: "Centre Sèwèdo : pour le Bien-Être Humain",
-      description: "Accompagner chaque enfant, chaque jeune et chaque famille vers un développement global, dans la paix, l'équilibre et la dignité.",
-      btnText: "Découvrir notre mission",
+      badge: "ÉCOSYSTÈME INTÉGRÉ DE DÉVELOPPEMENT HUMAIN",
+      title: "Centre Sèwèdo : Bâtir l'humain, cultiver l'avenir",
+      description: "Un écosystème unique sur 10 hectares combinant éducation, santé naturelle, culture africaine et autonomisation économique.",
+      btnText: "Découvrir notre écosystème",
       btnHref: "#about",
       bgImage: "/img/hero-bg-1.jpg"
     },
     {
       id: 2,
-      badge: "NOS DOMAINES D'ACTION",
-      title: "Éducation, Santé, Coaching & Agronomie",
-      description: "Quatre piliers essentiels pour offrir des opportunités concrètes et transformer durablement nos communautés.",
-      btnText: "Explorer nos domaines",
+      badge: "NOS DOMAINES D'INTERVENTION",
+      title: "Éducation, Santé Naturelle, Culture & Agronomie",
+      description: "Des pôles interconnectés valorisant la phytothérapie, les langues locales et l'entrepreneuriat communautaire.",
+      btnText: "Explorer les 7 pôles",
       btnHref: "#services",
       bgImage: "/img/hero-bg-2.jpg"
     },
     {
       id: 3,
-      badge: "ENGAGEMENT ET IMPACT",
-      title: "Des actions concrètes pour des vies transformées",
-      description: "Des bibliothèques communautaires à l'agriculture durable, nous construisons un développement humain et inclusif.",
-      btnText: "Voir nos programmes",
+      badge: "SOLIDARITÉ PRODUCTIVE",
+      title: "Transformons la solidarité des crises en investissement",
+      description: "Grâce à Sèwèdo Invest et nos tontines entrepreneuriales, nous bâtissons l'autonomie financière durable de nos communautés.",
+      btnText: "Voir les projets phares",
       btnHref: "#timeline",
       bgImage: "/img/hero-bg-3.jpeg"
     },
     {
       id: 4,
-      badge: "REJOIGNEZ LE MOUVEMENT",
-      title: "Ensemble, faisons grandir l'impact",
-      description: "Que vous soyez un particulier, une association ou une entreprise, contribuez à nos projets sur le terrain.",
+      badge: "DESTINATION UNIQUE AU BÉNIN",
+      title: "Séjours, Conférences & Tourisme Tradimoderne",
+      description: "Restaurant bio, bungalows africains, laboratoire de plantes médicinales et espaces événementiels en pleine nature.",
       btnText: "Nous contacter",
       btnHref: "#contact",
       bgImage: "/img/hero-bg.jpg"
@@ -42,7 +42,6 @@ function Hero() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Changement automatique de slide toutes les 6 secondes
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -66,7 +65,6 @@ function Hero() {
           className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
           style={{ backgroundImage: `url(${slide.bgImage})` }}
         >
-          {/* Overlay sombre style capture d'écran */}
           <div className="hero-overlay"></div>
 
           <div className="hero-container">
@@ -86,7 +84,6 @@ function Hero() {
         </div>
       ))}
 
-      {/* Flèches de navigation gauche / droite */}
       <button className="hero-arrow arrow-left" onClick={prevSlide} aria-label="Précédent">
         <i className="fas fa-chevron-left"></i>
       </button>
@@ -94,7 +91,6 @@ function Hero() {
         <i className="fas fa-chevron-right"></i>
       </button>
 
-      {/* Indicateurs (dots) en pilule en bas */}
       <div className="hero-dots">
         {slides.map((_, index) => (
           <button

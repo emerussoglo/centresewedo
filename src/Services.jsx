@@ -5,28 +5,28 @@ function Services() {
     {
       id: 1,
       title: "Éducation & Apprentissage",
-      description: "Bibliothèques communautaires, ateliers de lecture, formations numériques et linguistiques pour éveiller les savoirs.",
+      description: "Bibliothèque, médiathèque, soutien scolaire, ateliers artisanaux/culinaires, formations numériques et Sèwèdo Business Academy.",
       image: "/img/service2.jpg",
-      icon: "fas fa-user-graduate"
+      icon: "fas fa-book-reader"
     },
     {
       id: 2,
-      title: "Santé & Bien-être",
-      description: "Sensibilisation sanitaire, conseils en nutrition, promotion de l'hygiène et activités sportives pour un corps sain.",
+      title: "Santé, Bien-être & Phytothérapie",
+      description: "Jardin ethnobotanique, consultation de tradipraticiens, gamme Sèwèdo Nature, clinique mobile et Restaurant Bio Sèwèdo.",
       image: "/img/service3.jpg",
-      icon: "fas fa-heartbeat"
+      icon: "fas fa-notes-medical"
     },
     {
       id: 3,
-      title: "Coaching & Accompagnement",
-      description: "Développement personnel, suivi psychologique et encadrement familial pour aider chacun à révéler son potentiel.",
+      title: "Coaching & Accompagnement Familial",
+      description: "Médiation familiale, programme «Père Présent», cercles de sagesse Ubuntu, suivi psychologique et développement personnel.",
       image: "/img/service1.jpg",
-      icon: "fas fa-hands-helping"
+      icon: "fas fa-users-cog"
     },
     {
       id: 4,
-      title: "Agronomie & Autonomisation",
-      description: "Production agricole durable, formations professionnelles et activités génératrices de revenus pour une autonomie solide.",
+      title: "Agronomie & Ferme Éducative",
+      description: "Ferme de 10 ha, maraîchage bio, transformation agroalimentaire, programme Jeunesse Verte et marché mensuel.",
       image: "/img/service4.jpg",
       icon: "fas fa-seedling"
     }
@@ -36,16 +36,14 @@ function Services() {
     <section id="services" className="services-section">
       <div className="container">
         
-        {/* En-tête de section */}
         <div className="section-header">
-          <span className="section-subtitle">NOS EXPERTISES</span>
-          <h2 className="section-title">Domaines d'intervention</h2>
+          <span className="section-subtitle">L'ÉCOSYSTÈME INTEGRÉ</span>
+          <h2 className="section-title">Nos Domaines d'Intervention</h2>
           <p className="section-description">
-            Quatre piliers au service du développement intégral des communautés.
+            Des piliers interconnectés qui agissent en synergie pour une transformation humaine et économique globale.
           </p>
         </div>
 
-        {/* Grille des 4 pôles */}
         <div className="services-grid">
           {servicesData.map((item) => (
             <div key={item.id} className="service-card">

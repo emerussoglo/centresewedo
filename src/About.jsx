@@ -5,63 +5,51 @@ function About() {
     <section id="about" className="about-section">
       <div className="container">
         
-        {/* En-tête */}
         <div className="about-header">
-          <span className="section-subtitle">QUI SOMMES-NOUS</span>
-          <h2 className="section-title">À propos du Centre Sèwèdo</h2>
+          <span className="section-subtitle">À PROPOS DE NOUS</span>
+          <h2 className="section-title">Le Centre Sèwèdo pour le Bien-Être Humain</h2>
           <p className="about-text">
-            Le Centre Sèwèdo est un espace dédié au développement global et holistique des 
-            enfants, des jeunes et des familles. Nous œuvrons au quotidien pour renforcer les 
-            compétences, favoriser l’autonomie économique et promouvoir le bien-être dans 
-            toutes ses dimensions.
+            Implanté au Bénin sur un site de 10 hectares, le Centre Sèwèdo est une initiative intégrée et innovante qui vise à améliorer durablement les conditions de vie des enfants, des jeunes, des femmes et des familles. Notre conviction fondamentale : le développement humain authentique naît de l'intérieur, par l'éducation, la santé, l'équilibre psychologique et la reconnexion aux valeurs africaines.
           </p>
         </div>
 
-        {/* Image Principale */}
         <div className="about-image-container">
           <img 
             src="/img/about-img.jpg" 
-            alt="Équipe et bénéficiaires du centre" 
+            alt="Écosystème du Centre Sèwèdo" 
             className="about-img"
           />
         </div>
 
-        {/* Grille des Cartes (Vision, Mission, Valeurs) */}
         <div className="about-cards">
           
-          {/* Carte Vision */}
           <div className="about-card">
             <div className="card-icon-box">
               <i className="fas fa-eye"></i>
             </div>
             <h3>Notre Vision</h3>
             <p>
-              Un monde où chaque individu — enfant, jeune ou adulte — accède à un bien-être physique, 
-              mental et social, dans un environnement de paix et de dignité.
+              Construire une société de paix, d'équilibre et de dignité où chaque individu vit en harmonie avec lui-même, avec les autres et avec son environnement naturel.
             </p>
           </div>
 
-          {/* Carte Mission */}
           <div className="about-card">
             <div className="card-icon-box">
               <i className="fas fa-bullseye"></i>
             </div>
             <h3>Notre Mission</h3>
             <p>
-              Accompagner les communautés à travers des programmes concrets en éducation, santé, 
-              coaching et agronomie pour bâtir un développement humain durable et inclusif.
+              Accompagner les populations à travers des services intégrés valorisant les savoirs traditionnels africains, en créant un espace de ressourcement, de formation et d'activité économique durable.
             </p>
           </div>
 
-          {/* Carte Valeurs */}
           <div className="about-card">
             <div className="card-icon-box">
-              <i className="fas fa-star"></i>
+              <i className="fas fa-heart"></i>
             </div>
-            <h3>Nos Valeurs</h3>
+            <h3>Slogan & Valeurs</h3>
             <p>
-              Intégrité, solidarité, excellence et respect de la dignité humaine guident chacune de nos 
-              actions. Nous croyons en la force des valeurs culturelles et spirituelles pour transformer les vies.
+              <strong>"Bâtir l'humain, cultiver l'avenir."</strong> Ancré dans la philosophie Ubuntu ("Je suis parce que nous sommes"), le respect de la dignité, l'enracinement culturel, le retour à la terre et l'excellence.
             </p>
           </div>
 
