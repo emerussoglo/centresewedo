@@ -36,7 +36,7 @@ function Impact() {
           <span className="section-subtitle">NOTRE IMPACT VISÉ À 3 ANS</span>
           <h2 className="section-title">Objectifs & Résultats attendus</h2>
           <p className="section-description">
-            Chaque objectif concrétise notre engagement pour l'autonomisation économique, la préservation de la santé naturelle et le développement communautaire au Bénin.
+            Chaque objectif concrétise notre engagement pour l'autonomisation économique, la préservation de la santé naturelle et le développement communautaire au Bénin en s'appuyant sur la culture africaine.
           </p>
         </div>
 
