@@ -29,7 +29,29 @@ function Services() {
       description: "Ferme de 10 ha, maraîchage bio, transformation agroalimentaire, programme Jeunesse Verte et marché mensuel.",
       image: "/img/service4.jpg",
       icon: "fas fa-seedling"
+    },
+    {
+      id: 5,
+      title: "5. Solidarité Productive & Investissement",
+      description: "Sèwèdo Invest, tontines entrepreneuriales, Fonds d’Autonomisation et programmes Femmes d’Impact et Jeunes Leaders Productifs.",
+      image: "/img/hero-bg-3.jpeg",
+      icon: "fas fa-hand-holding-usd"
+    },
+    {
+      id: 6,
+      title: "6. Espaces Multifonctionnels & Hébergement",
+      description: "Salles de conférence (200-300 places), bungalows et cases africaines, camping, Centre Commercial Tradimoderne et pôle touristique.",
+      image: "/img/hero-bg.jpg",
+      icon: "fas fa-building"
+    },
+    {
+      id: 7,
+      title: "7. Culture Africaine & Langues Locales",
+      description: "Académie des langues locales (Fon, Yoruba, Bariba, Dendi, Mina, Goun), préservation du patrimoine immatériel et Festival Sèwèdo.",
+      image: "/img/hero-bg-2.jpg",
+      icon: "fas fa-globe-africa"
     }
+
   ];
 
   return (
