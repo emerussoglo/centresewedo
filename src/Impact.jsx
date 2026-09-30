@@ -8,12 +8,12 @@ function Impact() {
       label: "Bénéficiaires annuels directs et indirects",
       icon: "fas fa-users"
     },
-    {
-      id: 2,
-      number: "10 Ha",
-      label: "D'écosystème agricole et touristique aménagé",
-      icon: "fas fa-leaf"
-    },
+    // {
+    //   id: 2,
+    //   number: "10 Ha",
+    //   label: "D'écosystème agricole et touristique aménagé",
+    //   icon: "fas fa-leaf"
+    // },
     {
       id: 3,
       number: "100+",
